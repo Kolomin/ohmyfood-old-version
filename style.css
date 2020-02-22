@@ -107,7 +107,7 @@ footer a:hover p
 
 
 
-/* Accueil */
+/* Accueil - Menus */
 
 #accueil
 {
@@ -118,28 +118,39 @@ footer a:hover p
 #accueil > div
 {
   display: flex;
-  justify-content: space-between;
-  margin: 0 5% 50px 5%;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+#accueil > div > div
+{
+  display: flex;
+  width: 47.5%;
+}
+#accueil > div > div:nth-child(1)
+{
+  justify-content: flex-end;
 }
 #accueil a
 {
   height: 283px;
   width: 200px;
   box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+  margin: 0 7% 0 7%;
 }
-#accueil a:nth-child(1) div
+#accueil div div:nth-child(1) a:nth-child(1) div
 {
   background-image: url(images/menu-1.png);
 }
-#accueil a:nth-child(2) div
+#accueil div div:nth-child(1) a:nth-child(2) div
 {
   background-image: url(images/menu-2.png);
 }
-#accueil a:nth-child(3) div
+#accueil div div:nth-child(2) a:nth-child(1) div
 {
   background-image: url(images/menu-3.png);
 }
-#accueil a:nth-child(4) div
+#accueil div div:nth-child(2) a:nth-child(2) div
 {
   background-image: url(images/menu-4.png);
 }
@@ -156,6 +167,11 @@ footer a:hover p
 {
   background-size: 120%;
 }
+
+
+
+/* Accueil - "Prochainement" */
+
 #accueil p
 {
   font-size: 20px;
@@ -254,7 +270,7 @@ footer a:hover p
 
 
 
-/* Menu 1 - La note enchantée */
+/* Menu 1 : La note enchantée */
 
 #menu-1
 {
@@ -288,7 +304,6 @@ footer a:hover p
   width: 0%;
   height: 19%;
   margin-left: 41.5%;
-  border-bottom: 1.5px solid black;
   transition: width 0.5s;
 }
 #menu-1 > div > div:nth-child(1):hover div
@@ -306,7 +321,6 @@ footer a:hover p
   width: 0%;
   height: 25%;
   margin-left: 36%;
-  border-bottom: 1.5px solid black;
   transition: width 0.5s;
 }
 #menu-1 > div > div:nth-child(2):hover div
@@ -324,19 +338,22 @@ footer a:hover p
   width: 0%;
   height: 25%;
   margin-left: 33%;
-  border-bottom: 1.5px solid black;
   transition: width 0.5s;
 }
 #menu-1 > div > div:nth-child(3):hover div
 {
   width: 34%;
 }
+#menu-1 div div div
+{
+  border-bottom: 1.5px solid black;
+}
 
 
 
 
 
-/* Menu 2 - Le chic à la française */
+/* Menu 2 : Le chic à la française */
 
 #menu-2
 {
@@ -370,7 +387,7 @@ footer a:hover p
   width: 0%;
   height: 21%;
   margin-left: 25.5%;
-  border-bottom: 1.5px solid #c67412;
+  border-color: #c67412;
   transition: width 0.5s;
 }
 #menu-2 > div > div:nth-child(1):hover div
@@ -388,7 +405,7 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 31.5%;
-  border-bottom: 1.5px solid #a56698;
+  border-color: #a56698;
   transition: width 0.5s;
 }
 #menu-2 > div > div:nth-child(2):hover div
@@ -406,19 +423,27 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 28%;
-  border-bottom: 1.5px solid #6d4bcb;
+  border-color: #6d4bcb;
   transition: width 0.5s;
 }
 #menu-2 > div > div:nth-child(3):hover div
 {
   width: 44%;
 }
+#menu-2 div div div
+{
+  border-bottom: 1.5px solid black;
+}
+#menu-2 div div div
+{
+  border-bottom: 1.5px solid;
+}
 
 
 
 
 
-/* Menu 3 - Le délice des papilles */
+/* Menu 3 : Le délice des papilles */
 
 #menu-3
 {
@@ -452,7 +477,7 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 31.75%;
-  border-bottom: 1.5px solid #0228dd;
+  border-color: #0228dd;
   transition: width 0.5s;
 }
 #menu-3 > div > div:nth-child(1):hover div
@@ -470,7 +495,7 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 33.5%;
-  border-bottom: 1.5px solid #0670f3;
+  border-color: #0670f3;
   transition: width 0.5s;
 }
 #menu-3 > div > div:nth-child(2):hover div
@@ -488,19 +513,23 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 34%;
-  border-bottom: 1.5px solid #229df9;
+  border-color: #229df9;
   transition: width 0.5s;
 }
 #menu-3 > div > div:nth-child(3):hover div
 {
   width: 33%;
 }
+#menu-3 div div div
+{
+  border-bottom: 1.5px solid;
+}
 
 
 
 
 
-/* Menu 4 - La palette du goût */
+/* Menu 4 : La palette du goût */
 
 #menu-4
 {
@@ -534,7 +563,6 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 44.2%;
-  border-bottom: 1.5px solid #95dd69;
   transition: width 0.5s;
 }
 #menu-4 > div > div:nth-child(1):hover div
@@ -552,7 +580,6 @@ footer a:hover p
   width: 0%;
   height: 22%;
   margin-left: 37.5%;
-  border-bottom: 1.5px solid #95dd69;
   transition: width 0.5s;
 }
 #menu-4 > div > div:nth-child(2):hover div
@@ -570,12 +597,15 @@ footer a:hover p
   width: 0%;
   height: 20%;
   margin-left: 36.2%;
-  border-bottom: 1.5px solid #95dd69;
   transition: width 0.5s;
 }
 #menu-4 > div > div:nth-child(3):hover div
 {
   width: 28.5%;
+}
+#menu-4 div div div
+{
+  border-bottom: 1.5px solid #95dd69;
 }
 
 
@@ -590,12 +620,18 @@ footer a:hover p
   flex-direction: column;
   margin: 35px 5% 75px 5%;
 }
-#mentions p
+#mentions h2
 {
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#mentions p
+{
+  font-size: 15px;
   text-align: justify;
 }
-#mentions p:nth-child(2)
+#mentions p:nth-child(3), #mentions p:nth-child(5)
 {
   margin: 25px 0;
 }
@@ -604,4 +640,162 @@ footer a:hover p
 
 
 
-/* Responsive design */
+/* Responsive design - [++; 1700px] */
+
+@media screen and (min-width: 1700px)
+{
+  header, header a
+  {
+    height: 90px;
+  }
+  header h1
+  {
+    font-size: 50px;
+  }
+  footer, footer div, footer a
+  {
+    height: 60px;
+  }
+  footer p
+  {
+    font-size: 20px;
+  }
+  #accueil, #menu-1, #menu-2, #menu-3, #menu-4, #mentions
+  {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  #accueil div
+  {
+    margin-bottom: 75px;
+  }
+  #accueil a
+  {
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+  }
+  #accueil a, #accueil a div
+  {
+    width: 260px;
+    height: 367px;
+  }
+  #accueil p
+  {
+    font-size: 25px;
+    width: 230px;
+  }
+  #menu-1 > h2, #menu-2 > h2, #menu-3 > h2, #menu-4 > h2, #mentions h2
+  {
+    font-size: 30px;
+  }
+  #menu-1 > div, #menu-2 > div, #menu-3 > div, #menu-4 > div
+  {
+    width: 552px;
+    height: 780px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.15);
+  }
+  #menu-1 div div div, #menu-2 div div div, #menu-3 div div div, #menu-4 div div div
+  {
+    border-bottom-width: 2px;
+  }
+  #mentions h2
+  {
+    margin-bottom: 40px;
+  }
+  #mentions p
+  {
+    font-size: 20px;
+  }
+}
+
+
+
+/* Responsive design - [1100px; --] */
+
+@media screen and (max-width: 1100px)
+{
+  #accueil > div
+  {
+    flex-direction: column;
+  }
+  #accueil > div > div, #accueil > div > div:nth-child(1)
+  {
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+  #accueil > div > div:nth-child(1)
+  {
+    margin-bottom: 20px;
+  }
+  #accueil > div > div:nth-child(2)
+  {
+    margin-top: 20px;
+  }
+  #mentions
+  {
+    margin: 35px 10% 75px 10%;
+  }
+}
+
+
+
+/* Responsive design - [600px; --] */
+
+@media screen and (max-width: 600px)
+{
+  #accueil > div > div
+  {
+    flex-direction: column;
+  }
+  #accueil > div > div:nth-child(1), #accueil > div > div:nth-child(2)
+  {
+    width: 95%;
+  }
+  #accueil > div > div:nth-child(1)
+  {
+    margin-bottom: 0;
+  }
+  #accueil > div > div:nth-child(2)
+  {
+    margin-top: 0;
+  }
+  #accueil a
+  {
+    margin: 0 auto;
+  }
+  #accueil div:nth-child(1) a:nth-child(2), #accueil div:nth-child(2) a:nth-child(1), #accueil div:nth-child(2) a:nth-child(2)
+  {
+    margin-top: 40px;
+  }
+  #accueil p
+  {
+    font-size: 15px;
+    width: 140px;
+  }
+}
+
+
+
+/* Responsive design - [550px; --] */
+
+@media screen and (max-width: 550px)
+{
+  #menu-1 h2, #menu-2 h2, #menu-3 h2, #menu-4 h2, #mentions h2
+  {
+    font-size: 15px;
+  }
+  #menu-1 > div, #menu-2 > div, #menu-3 > div, #menu-4 > div
+  {
+    width: 275px;
+    height: 389px;
+  }
+  #menu-1 div div div, #menu-2 div div div, #menu-3 div div div, #menu-4 div div div
+  {
+    border-bottom-width: 1px;
+  }
+  #mentions p
+  {
+    font-size: 10px;
+  }
+}
