@@ -57,11 +57,46 @@ footer div
 }
 footer a
 {
-  color: #fdcb46;
+  display: flex;
+  height: 40px;
+  width: 130px;
+  justify-content: center;
+}
+footer p
+{
   font-size: 15px;
+  color: #fdcb46;
   display: block;
-  margin: auto 0;
-  padding: 5px 10px;
+  margin: auto;
+}
+footer a:hover p
+{
+  animation-name: wiggle;
+  animation-duration: 0.45s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wiggle {
+  0%
+  {
+    transform-origin: center;
+  }
+  25%
+  {
+    transform: rotate(8deg);
+  }
+  50%
+  {
+    transform-origin: center;
+  }
+  75%
+  {
+    transform: rotate(-8deg);
+  }
+  100%
+  {
+    transform-origin: center;
+  }
 }
 
 
@@ -75,20 +110,46 @@ footer a
   margin-top: 35px;
   margin-bottom: 75px;
 }
-#accueil div
+#accueil > div
 {
   display: flex;
   justify-content: space-between;
   margin: 0 5% 50px 5%;
 }
-#accueil img
+#accueil a
 {
+  height: 283px;
   width: 200px;
   box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
 }
-#accueil a
+#accueil a:nth-child(1) div
 {
-
+  background-image: url(images/menu-1.png);
+}
+#accueil a:nth-child(2) div
+{
+  background-image: url(images/menu-2.png);
+}
+#accueil a:nth-child(3) div
+{
+  background-image: url(images/menu-3.png);
+}
+#accueil a:nth-child(4) div
+{
+  background-image: url(images/menu-4.png);
+}
+#accueil a div
+{
+  width: 200px;
+  height: 283px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+#accueil a:hover div
+{
+  background-size: 120%;
 }
 #accueil p
 {
@@ -100,6 +161,88 @@ footer a
   text-align: center;
   padding: 5px 0;
   margin: auto;
+}
+#accueil span
+{
+  opacity: 0;
+}
+#accueil span:nth-child(1)
+{
+  animation-name: soon-1;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes soon-1
+{
+  20%
+  {
+    opacity: 0;
+  }
+  25%
+  {
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+#accueil span:nth-child(2)
+{
+  animation-name: soon-2;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes soon-2
+{
+  45%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+#accueil span:nth-child(3)
+{
+  animation-name: soon-3;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes soon-3
+{
+  70%
+  {
+    opacity: 0;
+  }
+  75%
+  {
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
 }
 
 
@@ -120,7 +263,7 @@ footer a
 }
 #menu-1 > div
 {
-  background-image: url(images/menu-1b.png);
+  background-image: url(images/carte-1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 425px;
@@ -202,7 +345,7 @@ footer a
 }
 #menu-2 > div
 {
-  background-image: url(images/menu-2b.png);
+  background-image: url(images/carte-2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 425px;
@@ -284,7 +427,7 @@ footer a
 }
 #menu-3 > div
 {
-  background-image: url(images/menu-3b.png);
+  background-image: url(images/carte-3.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 425px;
@@ -366,7 +509,7 @@ footer a
 }
 #menu-4 > div
 {
-  background-image: url(images/menu-4b.png);
+  background-image: url(images/carte-4.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 425px;
