@@ -76,30 +76,30 @@ footer p
 footer a:hover p
 {
   animation-name: wiggle;
-  animation-duration: 0.45s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 @keyframes wiggle {
-  0%
+  5%
   {
-    transform-origin: center;
+    transform: rotate(8deg);
+  }
+  15%
+  {
+    transform: rotate(-8deg);
   }
   25%
   {
     transform: rotate(8deg);
   }
-  50%
-  {
-    transform-origin: center;
-  }
-  75%
+  35%
   {
     transform: rotate(-8deg);
   }
-  100%
+  40%
   {
-    transform-origin: center;
+    transform: rotate(0deg);
   }
 }
 
